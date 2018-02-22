@@ -39,3 +39,22 @@ nav ul {
 }
 
 .navbar-fixed { z-index: 9999; }
+
+.side-nav li:first-child {
+  margin: 30px 0 0 0;
+}
+
+footer li {
+  text-transform: uppercase;
+}
+
+.page-footer {
+  background-color: #1c1c1c
+}
+
+.page-footer .footer-copyright {
+  background-color: #202020
+}
+.parallax-container {
+     height: 600px;
+   }
