@@ -58,3 +58,8 @@ footer li {
 .parallax-container {
      height: 600px;
    }
+
+main .container {
+  background: #fff;
+  opacity: 0.2;
+}
