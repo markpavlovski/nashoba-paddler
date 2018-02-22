@@ -20,3 +20,21 @@ nav ul a:hover {
 nav ul {
   margin: 0px 30px;
 }
+
+@media only screen and (min-width: 720px) {
+  .hide-on-med-and-up-custom {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width:992px) and (min-width:720px) {
+  .hide-on-med-custom {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .hide-on-sm-custom {
+    display: none !important;
+  }
+}

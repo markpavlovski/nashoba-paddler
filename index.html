@@ -3,7 +3,7 @@
 
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link type="text/css" rel="stylesheet" href="css/custom.css" />
 </head>
@@ -14,10 +14,13 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
+
   <header class="navbar-fixed">
-    <nav>
+    <!-- <nav>
    <div class="nav-wrapper">
-     <a href="#" class="brand-logo left"><img src="images/logo.png"></a>
+     <a href="#" class="brand-logo left hide-on-sm-and-down"><img src="images/logo.png"></a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
      <ul id="nav-mobile" class="right hide-on-sm-and-down">
        <li><a href="#">rentals</a></li>
        <li><a href="#">tours</a></li>
@@ -25,10 +28,34 @@
        <li><a href="#">river camp</a></li>
        <li><a href="#">river classroom</a></li>
        <li><a href="#">directions</a></li>
-
      </ul>
+     <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
    </div>
- </nav>
+ </nav> -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo hide-on-med-custom"><img src="images/logo.png"></a>
+        <a href="#" data-activates="slide-out" class="button-collapse hide-on-med-and-up-custom"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-sm-custom">
+          <li><a href="#">rentals</a></li>
+          <li><a href="#">tours</a></li>
+          <li><a href="#">instruction</a></li>
+          <li><a href="#">river camp</a></li>
+          <li><a href="#">river classroom</a></li>
+          <li><a href="#">directions</a></li>
+        </ul>
+        <ul id="slide-out" class="side-nav">
+          <li><a href="#!">First Sidebar Link</a></li>
+          <li><a href="#!">Second Sidebar Link</a></li>
+        </ul>
+      </div>
+    </nav>
+
   </header>
   <main>
     <div class="row valign" style="width:100%;">
@@ -63,6 +90,9 @@
   </main>
   <footer>
   </footer>
+
+
+  <script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 
