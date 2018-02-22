@@ -57,7 +57,7 @@ footer li {
 }
 
 .parallax-container {
-  height: 600px;
+  height: 650px;
 }
 
 main .container {
@@ -70,6 +70,7 @@ main h2 {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 2em;
+  margin-top: calc(180px);
 }
 
 .card {
@@ -119,14 +120,16 @@ main .container .row {
   padding-bottom: 2em;
 }
 
-.logo-float {
-  margin-top: -5em !important;
-  z-index: 999 !important;
 
+.logo-float {
+  margin-top: calc(-180px * 0.3);
+  margin-bottom: calc(-180px * 0.7);
+  font-size: 0em;
 }
 
 .logo-float img {
-  height: 50;
-  width: 50;
-  z-index: 999;
+  height: 180px;
+  z-index: 99999;
+  line-height: 0;
+  margin-bottom: 0;
 }
