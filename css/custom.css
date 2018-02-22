@@ -1,0 +1,22 @@
+.nav-wrapper img {
+  height: 80px;
+  margin: 10px 30px;
+
+}
+.nav-wrapper li {
+  text-transform: uppercase;
+}
+
+
+
+.nav-wrapper {
+  background-color: #1c1c1c
+}
+
+nav ul a:hover {
+  background-color: #302c2c;
+}
+
+nav ul {
+  margin: 0px 30px;
+}
