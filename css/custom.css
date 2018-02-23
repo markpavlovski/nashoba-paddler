@@ -1,3 +1,5 @@
+/* Nav Bar Styling and Respponsive Design */
+
 .nav-wrapper img {
   height: 80px;
   margin: 10px 30px;
@@ -23,7 +25,6 @@ nav ul {
   margin: 0px 30px;
 }
 
-
 @media only screen and (max-width:850px) and (min-width:740px) {
   .hide-on-med-custom {
     display: none !important;
@@ -44,76 +45,83 @@ nav ul {
   margin: 30px 0 0 0;
 }
 
+/* Footer Styling */
+
 footer li {
   text-transform: uppercase;
 }
 
 .page-footer {
   background-color: #63783E;
+  z-index: 1000000
 }
 
 .page-footer .footer-copyright {
   background-color: #202020;
+    z-index: 100000
 }
 
-.parallax-container {
-  height: 650px;
-}
-
-main .container {
-  background-color:rgba(255, 255, 255, 0.2);
-  color: #555
-}
-
-main h2 {
-  text-transform: uppercase;
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 2em;
-  margin-top: calc(180px);
-}
-
+/* Hours and Days Card */
 
 .card {
-  border-radius: 20px;
 }
 
 .content-custom {
-  border-radius: 20px;
 }
 
 .parallax-container .container {
   margin-top: 100px;
 }
 
+
+.card-tabs ul li {
+  background-color: #63783E /* Background color of the tabs */
+}
+
 .tabs .tab a {
-  color: #63783E;
+  color: #fff;
   text-transform: capitalize;
 }
 
 .tabs .tab a:hover {
-  color: #516331;
+  color: #fff;
   text-transform: capitalize;
 }
-
 
 .tabs .tab a.active {
-  color: #516331;
+  color: #fff;
   text-transform: capitalize;
 }
 
-.tabs .indicator  {
-  background-color: #63783E;
+.tabs .indicator {
+  background-color: #fff;
 }
 
 .card .card-content .card-title-custom {
-  color: #63783E;
+  color: #fff;
   font-size: 1.5em
 }
 
+.card-content {
+  background-color: #63783E;
+}
+
+/* Main Section */
+
+body {
+  background-image: url(/images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main .middle {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #555;
+  margin-bottom: 0em;
+}
 
 main .container .row {
-  margin: 0em 2em;
+  margin: 0;
 }
 
 .row-padded {
@@ -121,22 +129,70 @@ main .container .row {
   padding-bottom: 2em;
 }
 
+.rates-header {
+  min-height: 8em;
+  width: 100%;
+}
 
-.logo-float {
+.top-bg {
+  background-image: url(/images/b_top.gif);
+  background-repeat: repeat-x;
+  margin: 0;
+  height: 74px;
+}
+
+main .middle .main-content {
+  background-color: rgba(255, 255, 255, 1);
+  color: #555;
+  background-image: url(/images/tile.jpg);
+  padding: 0;
+}
+
+/* Build out main page content layout */
+
+
+.floating-logo {
   margin-top: calc(-180px * 0.3);
   margin-bottom: calc(-180px * 0.7);
   font-size: 0em;
 }
 
-.logo-float img {
+.floating-logo img {
   height: 180px;
-  z-index: 99999;
+  z-index: 1;
   line-height: 0;
   margin-bottom: 0;
 }
 
 
-.rates-header {
-  min-height: 8em;
-  width: 100%;
+.responsive-img-wrapper {
+  margin: 3em 0;
+}
+.responsive-img-wrapper img {
+  border-radius: 10px;
+}
+
+
+
+.page-title {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #1C1C1C;
+  margin-bottom: 2em;
+  margin-top: 6em;
+}
+
+.text-wrapper span {
+  display: block;
+  margin:1em;
+  text-align: justify;
+}
+
+.collection-item .row {
+  margin: 0;
+}
+
+main h5 {
+  min-height: 3em;
 }
