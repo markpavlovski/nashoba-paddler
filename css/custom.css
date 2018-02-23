@@ -73,6 +73,7 @@ main h2 {
   margin-top: calc(180px);
 }
 
+
 .card {
   border-radius: 20px;
 }
@@ -132,4 +133,10 @@ main .container .row {
   z-index: 99999;
   line-height: 0;
   margin-bottom: 0;
+}
+
+
+.rates-header {
+  min-height: 8em;
+  width: 100%;
 }
