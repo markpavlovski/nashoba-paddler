@@ -5,7 +5,7 @@
   padding: 0;
   color: #333333;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0px; }
+  font-size: 0; }
 
 h1 {
   font-family: 'IBM Plex Serif', serif;
@@ -41,7 +41,8 @@ nav {
     background-color: #44443a;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
     nav .main-nav li {
       font-weight: 600;
       font-size: 14px;
@@ -55,7 +56,8 @@ nav {
     background-color: #605e51;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
     nav .sub-nav li {
       font-weight: 500;
       font-size: 12px;
@@ -80,12 +82,12 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 80px 380px 40px 380px 80px;
-    grid-template-rows: 300px 600px;
+    grid-template-rows: 300px 480px 500px 140px 500px;
     grid-row: 2;
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: rgba(229, 230, 190, 0.85); }
-    .content main .top-pattern {
+    .content main .top-title {
       grid-row: 1;
       grid-column-start: 1;
       grid-column-end: 6;
@@ -95,11 +97,11 @@ nav {
       height: 200px;
       background-image: url("/images/b_top.png");
       background-repeat: repeat-x; }
-      .content main .top-pattern img {
+      .content main .top-title img {
         width: 230px;
         display: block;
         margin: 20px auto; }
-      .content main .top-pattern h1 {
+      .content main .top-title h1 {
         text-align: center;
         font-size: 40px; }
     .content main .top-image {
@@ -108,13 +110,71 @@ nav {
       grid-column-end: 5;
       align-self: start;
       justify-self: center;
-      background-color: red;
       width: 100%; }
       .content main .top-image img {
         width: 100%;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+    .content main .contact-hours {
+      grid-row: 3;
+      grid-column-start: 2;
+      grid-column-end: 3; }
+      .content main .contact-hours .contact {
+        background-color: red;
+        width: 100%;
+        height: 100px;
+        align-self: start;
+        justify-self: center;
+        border-radius: 10px; }
+      .content main .contact-hours .hours {
+        background-color: red;
+        width: 100%;
+        height: 300px;
+        margin-top: 30px;
+        align-self: start;
+        justify-self: center;
+        border-radius: 10px; }
+    .content main .description {
+      grid-row: 3;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      background-color: red;
+      width: 100%;
+      height: 430px;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px; }
+    .content main .rates-title {
+      grid-row: 4;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      background-color: red;
+      width: 100%;
+      height: 100px;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px; }
+    .content main .rates-left {
+      grid-row: 5;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      background-color: red;
+      width: 100%;
+      height: 430px;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px; }
+    .content main .rates-right {
+      grid-row: 5;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      background-color: red;
+      width: 100%;
+      height: 430px;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px; }
   .content div.overlay {
     grid-row-start: 1;
     grid-row-end: 3;
