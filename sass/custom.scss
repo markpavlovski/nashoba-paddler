@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600');
 $grid-columns: 1fr 10px 960px 10px 1fr;
 // $grid-columns: 1fr 10px 80px 380px 40px 380px 80px 10px 1fr;
 $main-grid-rows: 70px auto;
@@ -9,6 +10,11 @@ $main-grid-rows: 70px auto;
   color: rgba(51, 51, 51, 1);
   font-family: 'Montserrat', sans-serif;
   font-size: 0px;
+}
+
+h1 {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 30px;
 }
 
 body {
@@ -99,7 +105,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 80px 380px 40px 380px 80px;
-    grid-template-rows: 600px 600px;
+    grid-template-rows: 300px 600px;
 
     grid-row: 2;
     grid-column-start: 3;
@@ -107,12 +113,37 @@ nav {
     background-color: rgba(229, 230, 190,.85);
 
 
-    .full-image {
+    .top-pattern {
       grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      align-self: start;
+      justify-self: center;
+      width: 100%;
+      height: 200px;
+      background-image: url("/images/b_top.png");
+      background-repeat: repeat-x;
+
+      img {
+        width: 230px;
+        display: block;
+        margin: 20px auto;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+
+    }
+
+
+    .top-image {
+      grid-row: 2;
       grid-column-start: 2;
       grid-column-end: 5;
+      align-self: start;
       justify-self: center;
-      align-self: center;
       background-color: red;
       width: 100%;
 
