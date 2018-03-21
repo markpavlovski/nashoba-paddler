@@ -5,22 +5,46 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+body
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
+  display: grid;
+  height: 200px;
   width: 100%;
-  height: 100px;
-  background-color: red;
+  grid-template-columns: 1fr 20px 980px 20px 1fr;
+  grid-template-rows: 45px 30px;
+
+  .main {
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rgba(51, 51, 51, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sub {
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rgba(100, 100, 100, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }
 
 
 .content {
   display: grid;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 1);
-  grid-template-columns: 1fr 20px 800px 20px 1fr;
-  grid-template-rows: 100px auto;
+  grid-template-columns: 1fr 20px 980px 20px 1fr;
+  grid-template-rows: 75px auto;
 
   header {
     grid-row: 1;
