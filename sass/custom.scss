@@ -94,7 +94,7 @@ nav {
   top: 0;
   left: 0;
   display: grid;
-  height: 200px;
+  height: 70px;
   width: 100%;
   grid-template-columns: $grid-columns;
   grid-template-rows: 40px 30px;
@@ -345,8 +345,13 @@ nav {
           padding-bottom: 5px;
         }
 
-        &.hover {
+        &.hover-left {
           background-color: rgba(255,255,255,.5);
+        }
+
+        &.kids-kayak-memo {
+          margin-top: 30px;
+          font-style: italic;
         }
       }
     }
@@ -381,6 +386,7 @@ nav {
         &.hover-right {
           background-color: rgba(255,255,255,.5);
         }
+
       }
     }
   }

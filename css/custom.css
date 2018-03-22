@@ -76,7 +76,7 @@ nav {
   top: 0;
   left: 0;
   display: grid;
-  height: 200px;
+  height: 70px;
   width: 100%;
   grid-template-columns: 1fr 10px 960px 10px 1fr;
   grid-template-rows: 40px 30px; }
@@ -258,8 +258,11 @@ nav {
           margin-top: 10px;
           padding-top: 5px;
           padding-bottom: 5px; }
-        .content main .rates-left p.hover {
+        .content main .rates-left p.hover-left {
           background-color: rgba(255, 255, 255, 0.5); }
+        .content main .rates-left p.kids-kayak-memo {
+          margin-top: 30px;
+          font-style: italic; }
     .content main .rates-right {
       grid-row: 5;
       grid-column-start: 4;
