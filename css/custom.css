@@ -146,7 +146,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 80px 380px 40px 380px 80px;
-    grid-template-rows: 300px 480px 500px 100px 500px 100px 1075px 100px auto 100px auto;
+    grid-template-rows: 300px 480px 500px 100px 500px 100px 1075px 100px auto 100px auto 400px auto;
     grid-row: 2;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -225,7 +225,7 @@ nav {
       justify-content: center;
       align-items: center; }
       .content main .rates-title img {
-        height: 30px;
+        height: 40px;
         display: inline-block;
         margin: 0 20px; }
       .content main .rates-title h1 {
@@ -373,7 +373,7 @@ nav {
       justify-content: center;
       align-items: center; }
       .content main .season-passes img {
-        height: 30px;
+        height: 40px;
         display: inline-block;
         margin: 0 20px; }
       .content main .season-passes h1 {
@@ -391,7 +391,7 @@ nav {
         border-top: 10px solid #44443a;
         border-bottom: 10px solid #44443a; }
       .content main .season-passes-content h2 {
-        margin: 20px 0px; }
+        margin: 20px 0; }
       .content main .season-passes-content h3 {
         display: inline; }
       .content main .season-passes-content ul {
@@ -416,7 +416,7 @@ nav {
       justify-content: center;
       align-items: center; }
       .content main .group-rentals img {
-        height: 30px;
+        height: 40px;
         display: inline-block;
         margin: 0 20px; }
       .content main .group-rentals h1 {
@@ -429,7 +429,7 @@ nav {
       justify-self: center;
       width: 100%; }
       .content main .group-rentals-content p {
-        padding: 0px;
+        padding: 0;
         text-align: justify;
         line-height: 25px; }
       .content main .group-rentals-content img {
@@ -438,14 +438,14 @@ nav {
         border-top: 10px solid #44443a;
         border-bottom: 10px solid #44443a; }
       .content main .group-rentals-content h2 {
-        margin: 20px 0px; }
+        margin: 20px 0; }
       .content main .group-rentals-content h3 {
         margin-top: 50px; }
         .content main .group-rentals-content h3.discount {
-          margin: 10px 0px;
+          margin: 10px 0;
           text-transform: uppercase; }
       .content main .group-rentals-content ul {
-        margin: 40px 0px;
+        margin: 40px 0;
         list-style-image: url("/images/acorn.gif"); }
       .content main .group-rentals-content li {
         font-size: 14px;
@@ -454,12 +454,38 @@ nav {
         letter-spacing: 0.5px;
         line-height: 21px;
         margin-bottom: 5px; }
-    .content main div.overlay {
-      grid-row-start: 1;
-      grid-row-end: 3;
+    .content main .upper-footer {
+      grid-row: 12;
       grid-column-start: 2;
       grid-column-end: 5;
-      background-color: rgba(255, 255, 255, 0.6);
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      align-self: end;
+      justify-self: center;
+      width: 100%; }
+      .content main .upper-footer img {
+        display: block;
+        height: 100px;
+        margin: 20px auto; }
+      .content main .upper-footer p {
+        text-align: center;
+        width: 100%;
+        font-size: 13px;
+        margin: 5px 0; }
+    .content main .lower-footer {
+      grid-row: 13;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      align-self: start;
+      justify-self: center;
+      width: 100%;
+      height: 49px;
+      background-image: url("/images/bottom-pattern.png");
+      background-repeat: repeat-x; }
+  .content div.overlay {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
