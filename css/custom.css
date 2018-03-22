@@ -281,7 +281,7 @@ nav {
           margin-top: 10px;
           padding-top: 5px;
           padding-bottom: 5px; }
-        .content main .rates-right p.hover {
+        .content main .rates-right p.hover-right {
           background-color: rgba(255, 255, 255, 0.5); }
   .content div.overlay {
     grid-row-start: 1;
