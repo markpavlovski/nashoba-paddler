@@ -49,7 +49,8 @@ a {
   text-decoration: none;
   font-size: 14px;
   transition: color 0.5s ease;
-  color: #346a39; }
+  color: #346a39;
+  font-weight: 700; }
   a:hover {
     color: blue; }
 
@@ -64,6 +65,12 @@ p {
   letter-spacing: 0.5px;
   line-height: 21px;
   margin-bottom: 21px; }
+
+span {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 21px; }
 
 body {
   background-image: url("/images/b_image2.jpg");
@@ -136,7 +143,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 80px 380px 40px 380px 80px;
-    grid-template-rows: 300px 480px 500px 100px 500px 100px;
+    grid-template-rows: 300px 480px 500px 100px 500px 100px 1200px;
     grid-row: 2;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -188,7 +195,7 @@ nav {
         border-radius: 10px; }
         .content main .contact-hours .hours p {
           margin-bottom: 19px;
-          padding: 0px; }
+          padding: 0; }
     .content main .description {
       grid-row: 3;
       grid-column-start: 4;
@@ -307,6 +314,39 @@ nav {
         color: #EBEBDB; }
       .content main .gift-card:hover {
         background-color: #a81e2b; }
+    .content main .rules {
+      grid-row: 7;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      width: 100%;
+      height: 50px;
+      align-self: start;
+      justify-self: center; }
+      .content main .rules ul {
+        margin-top: 20px; }
+      .content main .rules li {
+        font-size: 14px;
+        text-align: justify;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        line-height: 21px;
+        margin-bottom: 5px; }
+      .content main .rules h3 {
+        display: inline; }
+      .content main .rules .offsite {
+        display: block;
+        margin-top: 30px;
+        width: 700px; }
+        .content main .rules .offsite h3 {
+          display: block;
+          margin-top: 50px;
+          margin-bottom: 10px; }
+        .content main .rules .offsite .table-1 {
+          display: inline-block;
+          width: 35%; }
+        .content main .rules .offsite .table-2 {
+          display: inline-block;
+          width: 12%; }
   .content div.overlay {
     grid-row-start: 1;
     grid-row-end: 3;
