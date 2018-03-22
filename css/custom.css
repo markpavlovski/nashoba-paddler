@@ -341,6 +341,13 @@ nav {
           display: block;
           margin-top: 50px;
           margin-bottom: 10px; }
+        .content main .rules .offsite p {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          transition: background-color 0.5s ease;
+          margin-bottom: 5px; }
+          .content main .rules .offsite p.hover-offsite {
+            background-color: rgba(255, 255, 255, 0.5); }
         .content main .rules .offsite .table-1 {
           display: inline-block;
           width: 35%; }
