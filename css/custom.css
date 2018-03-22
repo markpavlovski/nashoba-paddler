@@ -136,7 +136,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 80px 380px 40px 380px 80px;
-    grid-template-rows: 300px 480px 500px 100px 500px;
+    grid-template-rows: 300px 480px 500px 100px 500px 100px;
     grid-row: 2;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -286,6 +286,20 @@ nav {
           padding-bottom: 5px; }
         .content main .rates-right p.hover-right {
           background-color: rgba(255, 255, 255, 0.5); }
+    .content main .gift-card {
+      grid-row: 6;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      width: 500px;
+      height: 50px;
+      background-color: red;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px; }
+      .content main .gift-card h3 {
+        width: 100%;
+        text-align: center;
+        line-height: 50px; }
   .content div.overlay {
     grid-row-start: 1;
     grid-row-end: 3;
