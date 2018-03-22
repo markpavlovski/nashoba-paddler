@@ -187,7 +187,8 @@ nav {
         justify-self: center;
         border-radius: 10px; }
         .content main .contact-hours .hours p {
-          margin-bottom: 19px; }
+          margin-bottom: 19px;
+          padding: 0px; }
     .content main .description {
       grid-row: 3;
       grid-column-start: 4;
