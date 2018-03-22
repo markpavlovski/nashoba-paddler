@@ -146,7 +146,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 80px 380px 40px 380px 80px;
-    grid-template-rows: 300px 480px 500px 100px 500px 100px 1075px 100px;
+    grid-template-rows: 300px 480px 500px 100px 500px 100px 1075px 100px auto 100px auto;
     grid-row: 2;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -197,7 +197,7 @@ nav {
         justify-self: center;
         border-radius: 10px; }
         .content main .contact-hours .hours p {
-          margin-bottom: 19px;
+          margin-bottom: 22px;
           padding: 0; }
     .content main .description {
       grid-row: 3;
@@ -210,7 +210,8 @@ nav {
       .content main .description a {
         font-weight: 800; }
       .content main .description p {
-        text-align: justify; }
+        text-align: justify;
+        line-height: 21px; }
     .content main .rates-title {
       grid-row: 4;
       grid-column-start: 2;
@@ -377,12 +378,88 @@ nav {
         margin: 0 20px; }
       .content main .season-passes h1 {
         display: inline-block; }
-  .content div.overlay {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    background-color: rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    .content main .season-passes-content {
+      grid-row: 9;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      align-self: start;
+      justify-self: center;
+      width: 100%; }
+      .content main .season-passes-content img {
+        width: 100%;
+        margin: 30px 0;
+        border-top: 10px solid #44443a;
+        border-bottom: 10px solid #44443a; }
+      .content main .season-passes-content h2 {
+        margin: 20px 0px; }
+      .content main .season-passes-content h3 {
+        display: inline; }
+      .content main .season-passes-content ul {
+        margin-top: 20px; }
+      .content main .season-passes-content li {
+        font-size: 14px;
+        text-align: justify;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        line-height: 21px;
+        margin-bottom: 5px; }
+    .content main .group-rentals {
+      grid-row: 10;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      width: 100%;
+      height: 50px;
+      align-self: center;
+      justify-self: center;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .content main .group-rentals img {
+        height: 30px;
+        display: inline-block;
+        margin: 0 20px; }
+      .content main .group-rentals h1 {
+        display: inline-block; }
+    .content main .group-rentals-content {
+      grid-row: 11;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      align-self: start;
+      justify-self: center;
+      width: 100%; }
+      .content main .group-rentals-content p {
+        padding: 0px;
+        text-align: justify;
+        line-height: 25px; }
+      .content main .group-rentals-content img {
+        width: 100%;
+        margin: 30px 0;
+        border-top: 10px solid #44443a;
+        border-bottom: 10px solid #44443a; }
+      .content main .group-rentals-content h2 {
+        margin: 20px 0px; }
+      .content main .group-rentals-content h3 {
+        margin-top: 50px; }
+        .content main .group-rentals-content h3.discount {
+          margin: 10px 0px;
+          text-transform: uppercase; }
+      .content main .group-rentals-content ul {
+        margin: 40px 0px;
+        list-style-image: url("/images/acorn.gif"); }
+      .content main .group-rentals-content li {
+        font-size: 14px;
+        text-align: justify;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        line-height: 21px;
+        margin-bottom: 5px; }
+    .content main div.overlay {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      background-color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
