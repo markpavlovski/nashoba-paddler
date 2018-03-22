@@ -1,5 +1,5 @@
 document.addEventListener("mousemove",(event)=>{
-  if (event.target.closest(".rates-right p") || event.target.closest(".rates-left p")) {
+  if (event.target.closest(".rates-right p")) {
     let rowCells = document.querySelectorAll(".rates-right p")
     let rowCellsLeft = document.querySelectorAll(".rates-left p")
     for (let i =0; i< rowCells.length; i++){
