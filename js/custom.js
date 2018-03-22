@@ -54,3 +54,13 @@ document.addEventListener("mousemove",(event)=>{
     }
   }
 })
+
+let rentals = document.querySelector("#rentals")
+let tick = document.querySelector(".tick")
+tick.style.left = `${rentals.getBoundingClientRect().x + rentals.getBoundingClientRect().width/2-10}px`
+
+window.addEventListener("resize", (event)=>{
+let rentals = document.querySelector("#rentals")
+let tick = document.querySelector(".tick")
+tick.style.left = `${rentals.getBoundingClientRect().x + rentals.getBoundingClientRect().width/2-10}px`
+})
