@@ -296,7 +296,6 @@ nav {
       line-height: normal;
 
       &.header-block {
-        margin-top: 13px;
         box-sizing: border-box;
         padding: 5px 10px;
         background-color: $box-title;
@@ -333,6 +332,23 @@ nav {
         text-align: center;
         width: 100%;
       }
+
+      p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: background-color 0.5s ease;
+        margin-bottom: 5px;
+
+        &.header-block{
+          margin-top: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+
+        &.hover {
+          background-color: rgba(255,255,255,.5);
+        }
+      }
     }
 
     .rates-right {
@@ -348,6 +364,23 @@ nav {
       h3 {
         text-align: center;
         width: 100%;
+      }
+
+      p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: background-color 0.5s ease;
+        margin-bottom: 5px;
+
+        &.header-block{
+          margin-top: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+
+        &.hover {
+          background-color: rgba(255,255,255,.5);
+        }
       }
     }
   }

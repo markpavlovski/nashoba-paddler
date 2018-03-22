@@ -1,14 +1,18 @@
-// $('.button-collapse').sideNav({
-//     menuWidth: 300, // Default is 300
-//     edge: 'left', // Choose the horizontal origin
-//     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-//     draggable: true, // Choose whether you can drag to open on touch screens,
-//     onOpen: function(el) { /* Do Stuff */ }, // A function to be called when sideNav is opened
-//     onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
-//   }
-// );
-$(".button-collapse").sideNav();
-
-$(document).ready(function(){
-      $('.parallax').parallax();
-    });
+document.addEventListener("mousemove",(event)=>{
+  if (event.target.closest(".rates-right p") || event.target.closest(".rates-left p")) {
+    let rowCells = document.querySelectorAll(".rates-right p")
+    let rowCellsLeft = document.querySelectorAll(".rates-left p")
+    for (let i =0; i< rowCells.length; i++){
+      if (rowCells[i].id !== "" && rowCells[i].id === event.target.closest("p").id ){
+        rowCells[i].classList.add("hover")
+      } else {
+        rowCells[i].classList.remove("hover")
+      }
+    }
+  } else {
+    let rowCells = document.querySelectorAll("p")
+    for (let i =0; i< rowCells.length; i++){
+        rowCells[i].classList.remove("hover")
+    }
+  }
+})
