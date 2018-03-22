@@ -5,11 +5,58 @@
   padding: 0;
   color: #333333;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0; }
+  font-size: 0;
+  box-sizing: border-box; }
 
 h1 {
   font-family: 'IBM Plex Serif', serif;
-  font-size: 30px; }
+  font-size: 40px;
+  text-align: center; }
+
+h2 {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 30px;
+  text-align: left;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 50px; }
+
+h3 {
+  font-size: 17px;
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 25px; }
+
+h5 {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 25px; }
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.5s ease;
+  color: #346a39; }
+  a:hover {
+    color: blue; }
+
+b {
+  font-size: 14px;
+  font-weight: 700; }
+
+p {
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  margin-bottom: 21px; }
 
 body {
   background-image: url("/images/b_image2.jpg");
@@ -101,50 +148,54 @@ nav {
         width: 230px;
         display: block;
         margin: 20px auto; }
-      .content main .top-title h1 {
-        text-align: center;
-        font-size: 40px; }
     .content main .top-image {
       grid-row: 2;
       grid-column-start: 2;
       grid-column-end: 5;
       align-self: start;
       justify-self: center;
-      width: 100%; }
+      width: 100%;
+      background-color: #44443a; }
       .content main .top-image img {
         width: 100%;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+        margin: 10px 0; }
     .content main .contact-hours {
       grid-row: 3;
       grid-column-start: 2;
       grid-column-end: 3; }
       .content main .contact-hours .contact {
-        background-color: red;
+        background-color: #44443a;
         width: 100%;
-        height: 100px;
         align-self: start;
         justify-self: center;
-        border-radius: 10px; }
+        border-radius: 10px;
+        padding: 14px 0; }
+        .content main .contact-hours .contact h5 {
+          color: #EBEBDB; }
       .content main .contact-hours .hours {
-        background-color: red;
         width: 100%;
         height: 300px;
         margin-top: 30px;
         align-self: start;
         justify-self: center;
         border-radius: 10px; }
+        .content main .contact-hours .hours h3.header-block {
+          background-color: #adb386;
+          padding: 10px 15px;
+          border-radius: 2px;
+          margin-bottom: 20px; }
+        .content main .contact-hours .hours p {
+          margin-bottom: 19px; }
     .content main .description {
       grid-row: 3;
       grid-column-start: 4;
       grid-column-end: 5;
-      background-color: red;
       width: 100%;
       height: 430px;
       align-self: start;
-      justify-self: center;
-      border-radius: 10px; }
+      justify-self: center; }
+      .content main .description a {
+        font-weight: 800; }
     .content main .rates-title {
       grid-row: 4;
       grid-column-start: 2;

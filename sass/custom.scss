@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,600');
 $grid-columns: 1fr 10px 960px 10px 1fr; // $grid-columns: 1fr 10px 80px 380px 40px 380px 80px 10px 1fr;
 $main-grid-rows: 70px auto;
+$dark-grey: #44443a;
+$white: #EBEBDB;
+$box-title: #adb386;
 
 * {
   margin: 0;
@@ -9,11 +12,66 @@ $main-grid-rows: 70px auto;
   color: rgba(51, 51, 51, 1);
   font-family: 'Montserrat', sans-serif;
   font-size: 0;
+  box-sizing: border-box;
 }
 
 h1 {
   font-family: 'IBM Plex Serif', serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'IBM Plex Serif', serif;
   font-size: 30px;
+  text-align: left;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+h3 {
+  font-size: 17px;
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.5s ease;
+  color: #346a39;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+b {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  margin-bottom: 21px;
 }
 
 body {
@@ -40,14 +98,14 @@ nav {
     line-height: 30px;
     transition: background-color 0.5s ease;
     cursor: pointer;
-    color: #EBEBDB;
+    color: $white;
   }
 
   .main-nav {
     grid-row: 1;
     grid-column-start: 3;
     grid-column-end: 4;
-    background-color: #44443a;
+    background-color: $dark-grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,8 +115,6 @@ nav {
     // box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
     // box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
     // box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-
-
     li {
       font-weight: 600;
       font-size: 14px;
@@ -79,7 +135,6 @@ nav {
     justify-content: center;
     align-items: center;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
-
 
     li {
       font-weight: 500;
@@ -135,11 +190,6 @@ nav {
         display: block;
         margin: 20px auto;
       }
-
-      h1 {
-        text-align: center;
-        font-size: 40px;
-      }
     }
 
     .top-image {
@@ -149,15 +199,11 @@ nav {
       align-self: start;
       justify-self: center;
       width: 100%;
+      background-color: $dark-grey;
 
       img {
         width: 100%;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-        // box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
-        // box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
-        // box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+        margin: 10px 0;
       }
     }
 
@@ -167,22 +213,37 @@ nav {
       grid-column-end: 3;
 
       .contact {
-        background-color: red;
+        background-color: $dark-grey;
         width: 100%;
-        height: 100px;
         align-self: start;
         justify-self: center;
         border-radius: 10px;
+        padding: 14px 0;
+
+        h5 {
+          color: $white;
+        }
       }
 
       .hours {
-        background-color: red;
         width: 100%;
         height: 300px;
         margin-top: 30px;
         align-self: start;
         justify-self: center;
         border-radius: 10px;
+
+        h3.header-block {
+          background-color: $box-title;
+          padding: 10px 15px;
+          border-radius: 2px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          margin-bottom: 19px;
+        }
+
       }
     }
 
@@ -190,57 +251,51 @@ nav {
       grid-row: 3;
       grid-column-start: 4;
       grid-column-end: 5;
+      width: 100%;
+      height: 430px;
+      align-self: start;
+      justify-self: center;
 
-        background-color: red;
-        width: 100%;
-        height: 430px;
-        align-self: start;
-        justify-self: center;
-        border-radius: 10px;
+      a {
+        font-weight: 800;
+      }
     }
 
     .rates-title {
       grid-row: 4;
       grid-column-start: 2;
       grid-column-end: 5;
-
-        background-color: red;
-        width: 100%;
-        height: 100px;
-        align-self: start;
-        justify-self: center;
-        border-radius: 10px;
+      background-color: red;
+      width: 100%;
+      height: 100px;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px;
     }
 
     .rates-left {
       grid-row: 5;
       grid-column-start: 2;
       grid-column-end: 3;
-
-        background-color: red;
-        width: 100%;
-        height: 430px;
-        align-self: start;
-        justify-self: center;
-        border-radius: 10px;
+      background-color: red;
+      width: 100%;
+      height: 430px;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px;
     }
 
     .rates-right {
       grid-row: 5;
       grid-column-start: 4;
       grid-column-end: 5;
-
-        background-color: red;
-        width: 100%;
-        height: 430px;
-        align-self: start;
-        justify-self: center;
-        border-radius: 10px;
+      background-color: red;
+      width: 100%;
+      height: 430px;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px;
     }
-
-
-
-
   }
 
   div.overlay {
