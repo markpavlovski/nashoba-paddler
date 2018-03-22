@@ -17,6 +17,10 @@ $red: #be2230;
   scroll-behavior: smooth;
 }
 
+*::selection{
+  background: #558153;
+}
+
 .italic {
   font-style: italic !important;
 }
