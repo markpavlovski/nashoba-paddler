@@ -1,3 +1,40 @@
+
+
+
+document.querySelector("nav").innerHTML += `
+  <div class="main-nav">
+    <ul>
+      <li id="rentals">
+        RENTALS
+      </li>
+      <li>
+        TOURS
+      </li>
+      <li>
+        INSTRUCTIONS
+      </li>
+      <li>
+        RIVER CAMP
+      </li>
+      <li>
+        RIVER CLASSROOM
+      </li>
+      <li>
+        DIRECTIONS
+      </li>
+    </ul>
+  </div>
+
+`
+
+
+
+
+
+
+
+
+
 document.addEventListener("mousemove",(event)=>{
   if (event.target.closest(".rates-right p")) {
     let rowCells = document.querySelectorAll(".rates-right p")

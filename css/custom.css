@@ -91,7 +91,7 @@ body {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid  #605e51; }
+  border-bottom: 10px solid #605e51; }
 
 nav {
   position: fixed;
@@ -154,7 +154,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .content main {
+  .content div.overlay {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .content main.rentals {
     width: 100%;
     display: grid;
     grid-template-columns: 80px 380px 40px 380px 80px;
@@ -163,7 +172,7 @@ nav {
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: rgba(229, 230, 190, 0.85); }
-    .content main .top-title {
+    .content main.rentals .top-title {
       grid-row: 1;
       grid-column-start: 1;
       grid-column-end: 6;
@@ -173,11 +182,11 @@ nav {
       height: 200px;
       background-image: url("/images/b_top.png");
       background-repeat: repeat-x; }
-      .content main .top-title img {
+      .content main.rentals .top-title img {
         width: 230px;
         display: block;
         margin: 20px auto; }
-    .content main .top-image {
+    .content main.rentals .top-image {
       grid-row: 2;
       grid-column-start: 2;
       grid-column-end: 5;
@@ -185,33 +194,33 @@ nav {
       justify-self: center;
       width: 100%;
       background-color: #44443a; }
-      .content main .top-image img {
+      .content main.rentals .top-image img {
         width: 100%;
         margin: 10px 0; }
-    .content main .contact-hours {
+    .content main.rentals .contact-hours {
       grid-row: 3;
       grid-column-start: 2;
       grid-column-end: 3; }
-      .content main .contact-hours .contact {
+      .content main.rentals .contact-hours .contact {
         background-color: #44443a;
         width: 100%;
         align-self: start;
         justify-self: center;
         border-radius: 10px;
         padding: 14px 0; }
-        .content main .contact-hours .contact h5 {
+        .content main.rentals .contact-hours .contact h5 {
           color: #EBEBDB; }
-      .content main .contact-hours .hours {
+      .content main.rentals .contact-hours .hours {
         width: 100%;
         height: 300px;
         margin-top: 30px;
         align-self: start;
         justify-self: center;
         border-radius: 10px; }
-        .content main .contact-hours .hours p {
+        .content main.rentals .contact-hours .hours p {
           margin-bottom: 22px;
           padding: 0; }
-    .content main .description {
+    .content main.rentals .description {
       grid-row: 3;
       grid-column-start: 4;
       grid-column-end: 5;
@@ -219,12 +228,12 @@ nav {
       height: 430px;
       align-self: start;
       justify-self: start; }
-      .content main .description a {
+      .content main.rentals .description a {
         font-weight: 800; }
-      .content main .description p {
+      .content main.rentals .description p {
         text-align: justify;
         line-height: 21px; }
-    .content main .rates-title {
+    .content main.rentals .rates-title {
       grid-row: 4;
       grid-column-start: 2;
       grid-column-end: 5;
@@ -236,32 +245,32 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .content main .rates-title img {
+      .content main.rentals .rates-title img {
         height: 40px;
         display: inline-block;
         margin: 0 20px; }
-      .content main .rates-title h1 {
+      .content main.rentals .rates-title h1 {
         display: inline-block; }
-    .content main p {
+    .content main.rentals p {
       box-sizing: border-box;
       text-align: left;
       padding: 0 10px;
       line-height: normal; }
-      .content main p.header-block {
+      .content main.rentals p.header-block {
         box-sizing: border-box;
         padding: 5px 10px;
         background-color: #adb386;
         font-weight: 700; }
-    .content main .rates-table-left {
+    .content main.rentals .rates-table-left {
       display: inline-block;
       width: 50%; }
-    .content main .rates-table-middle {
+    .content main.rentals .rates-table-middle {
       display: inline-block;
       width: 25%; }
-    .content main .rates-table-right {
+    .content main.rentals .rates-table-right {
       display: inline-block;
       width: 25%; }
-    .content main .rates-left {
+    .content main.rentals .rates-left {
       grid-row: 5;
       grid-column-start: 2;
       grid-column-end: 3;
@@ -270,24 +279,24 @@ nav {
       align-self: start;
       justify-self: start;
       border-radius: 10px; }
-      .content main .rates-left h3 {
+      .content main.rentals .rates-left h3 {
         text-align: center;
         width: 100%; }
-      .content main .rates-left p {
+      .content main.rentals .rates-left p {
         padding-top: 10px;
         padding-bottom: 10px;
         transition: background-color 0.5s ease;
         margin-bottom: 5px; }
-        .content main .rates-left p.header-block {
+        .content main.rentals .rates-left p.header-block {
           margin-top: 10px;
           padding-top: 5px;
           padding-bottom: 5px; }
-        .content main .rates-left p.hover-left {
+        .content main.rentals .rates-left p.hover-left {
           background-color: rgba(255, 255, 255, 0.5); }
-        .content main .rates-left p.kids-kayak-memo {
+        .content main.rentals .rates-left p.kids-kayak-memo {
           margin-top: 30px;
           font-style: italic; }
-    .content main .rates-right {
+    .content main.rentals .rates-right {
       grid-row: 5;
       grid-column-start: 4;
       grid-column-end: 5;
@@ -296,21 +305,21 @@ nav {
       align-self: start;
       justify-self: start;
       border-radius: 10px; }
-      .content main .rates-right h3 {
+      .content main.rentals .rates-right h3 {
         text-align: center;
         width: 100%; }
-      .content main .rates-right p {
+      .content main.rentals .rates-right p {
         padding-top: 10px;
         padding-bottom: 10px;
         transition: background-color 0.5s ease;
         margin-bottom: 5px; }
-        .content main .rates-right p.header-block {
+        .content main.rentals .rates-right p.header-block {
           margin-top: 10px;
           padding-top: 5px;
           padding-bottom: 5px; }
-        .content main .rates-right p.hover-right {
+        .content main.rentals .rates-right p.hover-right {
           background-color: rgba(255, 255, 255, 0.5); }
-    .content main .gift-card {
+    .content main.rentals .gift-card {
       grid-row: 6;
       grid-column-start: 2;
       grid-column-end: 5;
@@ -323,14 +332,14 @@ nav {
       transition: background-color 0.3s ease;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
       cursor: pointer; }
-      .content main .gift-card h3 {
+      .content main.rentals .gift-card h3 {
         width: 100%;
         text-align: center;
         line-height: 50px;
         color: #EBEBDB; }
-      .content main .gift-card:hover {
+      .content main.rentals .gift-card:hover {
         background-color: #a81e2b; }
-    .content main .rules {
+    .content main.rentals .rules {
       grid-row: 7;
       grid-column-start: 2;
       grid-column-end: 5;
@@ -338,41 +347,41 @@ nav {
       height: 50px;
       align-self: start;
       justify-self: center; }
-      .content main .rules ul {
+      .content main.rentals .rules ul {
         margin-top: 20px; }
-      .content main .rules li {
+      .content main.rentals .rules li {
         font-size: 14px;
         text-align: justify;
         font-weight: 500;
         letter-spacing: 0.5px;
         line-height: 21px;
         margin-bottom: 5px; }
-      .content main .rules h3 {
+      .content main.rentals .rules h3 {
         display: inline; }
-      .content main .rules .offsite {
+      .content main.rentals .rules .offsite {
         display: block;
         margin-top: 30px;
         width: 700px; }
-        .content main .rules .offsite h3 {
+        .content main.rentals .rules .offsite h3 {
           display: block;
           margin-top: 50px;
           margin-bottom: 10px; }
-        .content main .rules .offsite p {
+        .content main.rentals .rules .offsite p {
           padding-top: 10px;
           padding-bottom: 10px;
           transition: background-color 0.5s ease;
           margin-bottom: 5px; }
-          .content main .rules .offsite p.hover-offsite {
+          .content main.rentals .rules .offsite p.hover-offsite {
             background-color: rgba(255, 255, 255, 0.5); }
-          .content main .rules .offsite p.italic {
+          .content main.rentals .rules .offsite p.italic {
             margin-bottom: 40px; }
-        .content main .rules .offsite .table-1 {
+        .content main.rentals .rules .offsite .table-1 {
           display: inline-block;
           width: 35%; }
-        .content main .rules .offsite .table-2 {
+        .content main.rentals .rules .offsite .table-2 {
           display: inline-block;
           width: 12%; }
-    .content main .season-passes {
+    .content main.rentals .season-passes {
       grid-row: 8;
       grid-column-start: 2;
       grid-column-end: 5;
@@ -384,38 +393,38 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .content main .season-passes img {
+      .content main.rentals .season-passes img {
         height: 40px;
         display: inline-block;
         margin: 0 20px; }
-      .content main .season-passes h1 {
+      .content main.rentals .season-passes h1 {
         display: inline-block; }
-    .content main .season-passes-content {
+    .content main.rentals .season-passes-content {
       grid-row: 9;
       grid-column-start: 2;
       grid-column-end: 5;
       align-self: start;
       justify-self: center;
       width: 100%; }
-      .content main .season-passes-content img {
+      .content main.rentals .season-passes-content img {
         width: 100%;
         margin: 30px 0;
         border-top: 10px solid #44443a;
         border-bottom: 10px solid #44443a; }
-      .content main .season-passes-content h2 {
+      .content main.rentals .season-passes-content h2 {
         margin: 20px 0; }
-      .content main .season-passes-content h3 {
+      .content main.rentals .season-passes-content h3 {
         display: inline; }
-      .content main .season-passes-content ul {
+      .content main.rentals .season-passes-content ul {
         margin-top: 20px; }
-      .content main .season-passes-content li {
+      .content main.rentals .season-passes-content li {
         font-size: 14px;
         text-align: justify;
         font-weight: 500;
         letter-spacing: 0.5px;
         line-height: 21px;
         margin-bottom: 5px; }
-    .content main .group-rentals {
+    .content main.rentals .group-rentals {
       grid-row: 10;
       grid-column-start: 2;
       grid-column-end: 5;
@@ -427,62 +436,62 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .content main .group-rentals img {
+      .content main.rentals .group-rentals img {
         height: 40px;
         display: inline-block;
         margin: 0 20px; }
-      .content main .group-rentals h1 {
+      .content main.rentals .group-rentals h1 {
         display: inline-block; }
-    .content main .group-rentals-content {
+    .content main.rentals .group-rentals-content {
       grid-row: 11;
       grid-column-start: 2;
       grid-column-end: 5;
       align-self: start;
       justify-self: center;
       width: 100%; }
-      .content main .group-rentals-content p {
+      .content main.rentals .group-rentals-content p {
         padding: 0;
         text-align: justify;
         line-height: 25px; }
-      .content main .group-rentals-content img {
+      .content main.rentals .group-rentals-content img {
         width: 100%;
         margin: 30px 0;
         border-top: 10px solid #44443a;
         border-bottom: 10px solid #44443a; }
-      .content main .group-rentals-content h2 {
+      .content main.rentals .group-rentals-content h2 {
         margin: 20px 0; }
-      .content main .group-rentals-content h3 {
+      .content main.rentals .group-rentals-content h3 {
         margin-top: 50px; }
-        .content main .group-rentals-content h3.discount {
+        .content main.rentals .group-rentals-content h3.discount {
           margin: 10px 0;
           text-transform: uppercase; }
-      .content main .group-rentals-content ul {
+      .content main.rentals .group-rentals-content ul {
         margin: 40px 0;
         list-style-image: url("/images/acorn.gif"); }
-      .content main .group-rentals-content li {
+      .content main.rentals .group-rentals-content li {
         font-size: 14px;
         text-align: justify;
         font-weight: 500;
         letter-spacing: 0.5px;
         line-height: 21px;
         margin-bottom: 5px; }
-    .content main .upper-footer {
+    .content main.rentals .upper-footer {
       grid-row: 12;
       grid-column-start: 2;
       grid-column-end: 5;
       align-self: end;
       justify-self: center;
       width: 100%; }
-      .content main .upper-footer img {
+      .content main.rentals .upper-footer img {
         display: block;
         height: 100px;
         margin: 20px auto; }
-      .content main .upper-footer p {
+      .content main.rentals .upper-footer p {
         text-align: center;
         width: 100%;
         font-size: 13px;
         margin: 5px 0; }
-    .content main .lower-footer {
+    .content main.rentals .lower-footer {
       grid-row: 13;
       grid-column-start: 1;
       grid-column-end: 6;
@@ -495,9 +504,9 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .content main .lower-footer ul {
+      .content main.rentals .lower-footer ul {
         margin-top: 10px; }
-      .content main .lower-footer li {
+      .content main.rentals .lower-footer li {
         font-weight: 500;
         font-size: 16px;
         padding: 0 10px;
@@ -506,14 +515,173 @@ nav {
         padding-top: 12px;
         padding-bottom: 10px;
         font-weight: 600; }
-        .content main .lower-footer li:hover {
+        .content main.rentals .lower-footer li:hover {
           background-color: rgba(255, 255, 255, 0.1); }
-  .content div.overlay {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    background-color: rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+  .content main.tours {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 380px 40px 380px 80px;
+    grid-template-rows: 260px auto auto 200px auto;
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rgba(229, 230, 190, 0.85); }
+    .content main.tours .top-title {
+      grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      align-self: start;
+      justify-self: center;
+      width: 100%;
+      height: 200px;
+      background-image: url("/images/b_top.png");
+      background-repeat: repeat-x; }
+      .content main.tours .top-title img {
+        width: 230px;
+        display: block;
+        margin: 20px auto; }
+    .content main.tours .tours-description {
+      grid-row: 2;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      align-self: start;
+      justify-self: center;
+      width: 100%; }
+      .content main.tours .tours-description p {
+        padding: 0;
+        text-align: justify;
+        line-height: 25px; }
+      .content main.tours .tours-description img {
+        width: 100%;
+        margin: 30px 0;
+        border-top: 10px solid #44443a;
+        border-bottom: 10px solid #44443a; }
+    .content main.tours .tour-calendar {
+      grid-row: 3;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      width: 500px;
+      height: 50px;
+      background-color: #be2230;
+      align-self: start;
+      justify-self: center;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      cursor: pointer; }
+      .content main.tours .tour-calendar h3 {
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        color: #EBEBDB; }
+      .content main.tours .tour-calendar:hover {
+        background-color: #a81e2b; }
+    .content main.tours .monthly-nature-tours {
+      grid-row: 4;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      width: 100%;
+      height: 50px;
+      align-self: center;
+      justify-self: center;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .content main.tours .monthly-nature-tours img {
+        height: 40px;
+        display: inline-block;
+        margin: 0 20px; }
+      .content main.tours .monthly-nature-tours h1 {
+        display: inline-block; }
+    .content main.tours .tour-card-left {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      width: 100%;
+      height: 250px;
+      background-color: red; }
+    .content main.tours .tour-card-right {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      width: 100%;
+      margin-bottom: 30px; }
+      .content main.tours .tour-card-right h2 {
+        line-height: 40px;
+        margin-bottom: 10px; }
+      .content main.tours .tour-card-right p {
+        margin: 0px 0px; }
+      .content main.tours .tour-card-right .choose-dates, .content main.tours .tour-card-right .tour-description {
+        margin: 10px 0px; }
+      .content main.tours .tour-card-right .book-now {
+        grid-row: 3;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        width: 200px;
+        height: 50px;
+        background-color: #be2230;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        margin: 20px auto; }
+        .content main.tours .tour-card-right .book-now h3 {
+          width: 100%;
+          text-align: center;
+          line-height: 50px;
+          color: #EBEBDB; }
+        .content main.tours .tour-card-right .book-now:hover {
+          background-color: #a81e2b; }
+    .content main.tours #full-moon-canoeing {
+      grid-row: 5; }
+      .content main.tours #full-moon-canoeing.tour-card-left {
+        background: url("/images/groups.png"); }
+    .content main.tours #spring-birds-and-flowers-paddling-tour {
+      grid-row: 6; }
+      .content main.tours #spring-birds-and-flowers-paddling-tour.tour-card-left {
+        background: url("/images/groups.png"); }
+    .content main.tours #paddling-with-beavers {
+      grid-row: 7; }
+      .content main.tours #paddling-with-beavers.tour-card-left {
+        background: url("/images/groups.png"); }
+    .content main.tours .upper-footer {
+      grid-row: 12;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      align-self: end;
+      justify-self: center;
+      width: 100%; }
+      .content main.tours .upper-footer img {
+        display: block;
+        height: 100px;
+        margin: 20px auto; }
+      .content main.tours .upper-footer p {
+        text-align: center;
+        width: 100%;
+        font-size: 13px;
+        margin: 5px 0; }
+    .content main.tours .lower-footer {
+      grid-row: 13;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      align-self: start;
+      justify-self: center;
+      width: 100%;
+      height: 49px;
+      background-image: url("/images/bottom-pattern.png");
+      background-repeat: repeat-x;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .content main.tours .lower-footer ul {
+        margin-top: 10px; }
+      .content main.tours .lower-footer li {
+        font-weight: 500;
+        font-size: 16px;
+        padding: 0 10px;
+        display: inline;
+        cursor: pointer;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        font-weight: 600; }
+        .content main.tours .lower-footer li:hover {
+          background-color: rgba(255, 255, 255, 0.1); }
