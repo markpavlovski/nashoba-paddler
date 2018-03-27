@@ -27,6 +27,22 @@ document.querySelector("nav").innerHTML += `
 
 `
 
+document.querySelector(".lower-footer").innerHTML += `
+<ul>
+  <li>
+    ABOUT US
+  </li>
+  <li>
+    EMPLOYMENT
+  </li>
+  <li>
+    EVENTS
+  </li>
+  <li>
+    FORMS
+  </li>
+</ul>
+`
 
 
 

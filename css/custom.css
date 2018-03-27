@@ -521,7 +521,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 80px 380px 40px 380px 80px;
-    grid-template-rows: 260px auto auto 200px auto;
+    grid-template-rows: 260px auto auto 200px auto auto auto auto auto auto auto 200px auto 200px auto 300px auto;
     grid-row: 2;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -609,9 +609,10 @@ nav {
         line-height: 40px;
         margin-bottom: 10px; }
       .content main.tours .tour-card-right p {
-        margin: 0px 0px; }
-      .content main.tours .tour-card-right .choose-dates, .content main.tours .tour-card-right .tour-description {
-        margin: 10px 0px; }
+        margin: 0; }
+      .content main.tours .tour-card-right .choose-dates,
+      .content main.tours .tour-card-right .tour-description {
+        margin: 10px 0; }
       .content main.tours .tour-card-right .book-now {
         grid-row: 3;
         grid-column-start: 2;
@@ -643,8 +644,113 @@ nav {
       grid-row: 7; }
       .content main.tours #paddling-with-beavers.tour-card-left {
         background: url("/images/groups.png"); }
-    .content main.tours .upper-footer {
+    .content main.tours #family-paddling-with-turtles {
+      grid-row: 8; }
+      .content main.tours #family-paddling-with-turtles.tour-card-left {
+        background: url("/images/groups.png"); }
+    .content main.tours #river-paddling-adventure-tour {
+      grid-row: 9; }
+      .content main.tours #river-paddling-adventure-tour.tour-card-left {
+        background: url("/images/groups.png"); }
+    .content main.tours #oxbow-national-wildlife-refuge-paddle {
+      grid-row: 10; }
+      .content main.tours #oxbow-national-wildlife-refuge-paddle.tour-card-left {
+        background: url("/images/groups.png"); }
+    .content main.tours #fall-foliage-paddle {
+      grid-row: 11; }
+      .content main.tours #fall-foliage-paddle.tour-card-left {
+        background: url("/images/groups.png"); }
+    .content main.tours .birthday-parties-title {
       grid-row: 12;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      width: 100%;
+      height: 50px;
+      align-self: center;
+      justify-self: center;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .content main.tours .birthday-parties-title img {
+        height: 40px;
+        display: inline-block;
+        margin: 0 20px; }
+      .content main.tours .birthday-parties-title h1 {
+        display: inline-block; }
+    .content main.tours .birthday-parties-description {
+      grid-row: 13;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      align-self: start;
+      justify-self: center;
+      width: 100%; }
+      .content main.tours .birthday-parties-description p {
+        padding: 0;
+        text-align: justify;
+        line-height: 23px;
+        margin: 0px 0px; }
+        .content main.tours .birthday-parties-description p:first-of-type {
+          margin: 20px 0; }
+      .content main.tours .birthday-parties-description h3 {
+        margin: 60px 0px 30px 0px; }
+      .content main.tours .birthday-parties-description img {
+        width: 100%;
+        margin: 30px 0;
+        border-top: 10px solid #44443a;
+        border-bottom: 10px solid #44443a; }
+      .content main.tours .birthday-parties-description ul {
+        margin: 40px 0;
+        list-style-image: url("/images/acorn.gif"); }
+      .content main.tours .birthday-parties-description li {
+        font-size: 16px;
+        text-align: justify;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        line-height: 35px;
+        margin-bottom: 5px;
+        padding: 0px 5px; }
+    .content main.tours .custom-guided-title {
+      grid-row: 14;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      width: 100%;
+      height: 50px;
+      align-self: center;
+      justify-self: center;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .content main.tours .custom-guided-title img {
+        height: 40px;
+        display: inline-block;
+        margin: 0 20px; }
+      .content main.tours .custom-guided-title h1 {
+        display: inline-block; }
+    .content main.tours .custom-guided-description {
+      grid-row: 15;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      align-self: start;
+      justify-self: center;
+      width: 100%; }
+      .content main.tours .custom-guided-description p {
+        padding: 0;
+        text-align: justify;
+        line-height: 23px;
+        margin: 0px 0px; }
+        .content main.tours .custom-guided-description p:first-of-type {
+          margin: 20px 0; }
+      .content main.tours .custom-guided-description h3 {
+        margin: 60px 0px 30px 0px; }
+      .content main.tours .custom-guided-description img {
+        width: 100%;
+        margin: 30px 0;
+        border-top: 10px solid #44443a;
+        border-bottom: 10px solid #44443a; }
+    .content main.tours .upper-footer {
+      grid-row: 16;
       grid-column-start: 2;
       grid-column-end: 5;
       align-self: end;
@@ -660,7 +766,7 @@ nav {
         font-size: 13px;
         margin: 5px 0; }
     .content main.tours .lower-footer {
-      grid-row: 13;
+      grid-row: 17;
       grid-column-start: 1;
       grid-column-end: 6;
       align-self: start;
